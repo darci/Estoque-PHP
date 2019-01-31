@@ -12,5 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return '<h1>welcome</h1>';
 });
+
+Route::get('/outra', function () {
+    return '<h1>outra</h1>';
+});
+
+Route::get('/produtos', 'ProdutoController@lista');
+
+
