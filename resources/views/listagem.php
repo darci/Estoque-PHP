@@ -9,10 +9,11 @@
             <table class="table table-striped table-bordered table-hover">
                 <?php foreach ($produtos as $p): ?>
                 <tr>
-                <td><?php echo $p->nome ?> </td>
-                <td><?php echo $p->valor ?> </td>
-                <td><?php echo $p->descricao ?> </td>
-                <td><?php echo $p->quantidade ?> </td>
+                    <td><?php echo $p->nome ?> </td>
+                    <td><?php echo $p->valor ?> </td>
+                    <td><?php echo $p->descricao ?> </td>
+                    <td><?php echo $p->quantidade ?> </td>
+                    <td><a href="/produtos/mostra?id=<?php echo $p->id ?>">Visualizar</a></td>
                 </tr>
                 <?php endforeach ?>
             </table>
