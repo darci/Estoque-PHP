@@ -12,8 +12,7 @@ class ProdutoController extends Controller {
         return  view('listagem')->with('produtos', $produtos);
     }
     
-    public function mostra(){
-        $id = Request::input('id', '0');
+    public function mostra($id){
         $resposta = DB::select('select * from produtos where id = ?',[$id]);
         if(empty($resposta)) {
             return "Esse produto não existe";

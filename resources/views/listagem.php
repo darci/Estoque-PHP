@@ -13,7 +13,7 @@
                     <td><?php echo $p->valor ?> </td>
                     <td><?php echo $p->descricao ?> </td>
                     <td><?php echo $p->quantidade ?> </td>
-                    <td><a href="/produtos/mostra?id=<?php echo $p->id ?>">Visualizar</a></td>
+                    <td><a href="/produtos/mostra/<?php echo $p->id ?>">Visualizar</a></td>
                 </tr>
                 <?php endforeach ?>
             </table>
