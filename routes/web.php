@@ -15,7 +15,7 @@ Route::get('/', function () {
     return '<h1>welcome</h1>';
 });
 
-Route::get('/produtos/adiciona', 'ProdutoController@adiciona');
+Route::post('/produtos/adiciona', 'ProdutoController@adiciona');
 
 Route::get('/produtos/novo', 'ProdutoController@novo');
 
