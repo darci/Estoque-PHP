@@ -18,8 +18,8 @@
         @endif
     </table>
     <h4>
-        <span class="label label-danger pull-right">
+        <div class="alert alert-danger" role="alert">
             Um ou menos itens no estoque
-        </span>
+        </div>
     </h4>
 @endsection
